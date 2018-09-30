@@ -15,6 +15,5 @@ spec:
       containers:
         - name: room-services
           image: freddybendezu/room-services
-          imagePullPolicy: Never
           ports:
             - containerPort: 8001
