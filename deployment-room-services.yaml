@@ -13,7 +13,7 @@ spec:
         app: room-services
     spec:
       containers:
-        - name: freddybendezu/room-services
+        - name: room-services
           image: freddybendezu/room-services
           imagePullPolicy: Never
           ports:
