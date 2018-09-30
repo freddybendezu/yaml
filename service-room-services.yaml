@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: freddybendezu/room-services
+  name: room-services
 spec:
   selector:
-    app: freddybendezu/room-services
+    app: room-services
     tier: backend-room-services
   ports:
   - protocol: TCP
