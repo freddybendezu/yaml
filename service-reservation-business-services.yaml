@@ -1,12 +1,12 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: demo-frontend
+  name: room-services1
 spec:
   selector:
-    app: demo-frontend
+    app: room-services
   ports:
   - protocol: TCP
-    port: 8081
-    nodePort: 30001
+    port: 80
+    nodePort: 8001
   type: NodePort
