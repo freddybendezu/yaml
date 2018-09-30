@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: room-services2
+spec:
+ selector:
+  app: room-services
+ ports:
+  - port: 80
+    targetPort: 8080
+ type: LoadBalancer
