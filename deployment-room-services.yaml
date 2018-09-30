@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: freddybendezu/room-services
+  name: room-services
 spec:
   selector:
       matchLabels:
