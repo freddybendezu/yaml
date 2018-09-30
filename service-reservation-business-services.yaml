@@ -7,6 +7,6 @@ spec:
     app: room-services
   ports:
   - protocol: TCP
-    port: 80
-    nodePort: 8080
+    port: 8001
+    nodePort: 30001
   type: NodePort
