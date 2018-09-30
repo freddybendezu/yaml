@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: freddybendezu/room-services
+spec:
+  selector:
+      matchLabels:
+        app: freddybendezu/room-services
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: freddybendezu/room-services
+    spec:
+      containers:
+        - name: freddybendezu/room-services
+          image: freddybendezu/room-services
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8001

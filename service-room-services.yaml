@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: freddybendezu/room-services
+spec:
+  selector:
+    app: freddybendezu/room-services
+    tier: backend-room-services
+  ports:
+  - protocol: TCP
+    port: 8080
+  type: ClusterIP
