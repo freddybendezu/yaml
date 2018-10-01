@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     app: room-services
-    tier: backend-room-services
   ports:
   - protocol: TCP
     port: 8001
