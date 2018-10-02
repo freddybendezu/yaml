@@ -6,14 +6,19 @@ spec:
   selector:
       matchLabels:
         app: room-services
+        tier: backend
+        track: stable
   replicas: 3
   template:
     metadata:
       labels:
         app: room-services
+        tier: backend
+        track: stable        
     spec:
       containers:
         - name: room-services
           image: freddybendezu/room-services
           ports:
-            - containerPort: 8001
+            - name: http
+              containerPort: 8001
